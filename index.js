@@ -19,7 +19,7 @@ function currentLine(currentLine){
     return 'The line is currently empty.'
   }
   var newArray = [];
-  for(var j = 1; j < currentLine.length; j++){
+  for(var j = 0; j < currentLine.length; j++){
     newArray.push(`${j+1}. ${currentLine[j]}`);
   }
   return "The line is currently: " + newArray.join(', ');
